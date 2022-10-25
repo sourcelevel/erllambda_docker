@@ -32,7 +32,7 @@ $ git clone https://github.com/alertlogic/erllambda_docker.git
 Specify path to a `Dockerfile` with a required version to build an image:
 
 ``` console
-$ docker build -t alertlogic/erllambda:20.3 ./erllambda_docker/20
+$ docker build -t sourcelevel/erllambda:24.2 ./erlang/24/
 ```
 
 ### Running
@@ -40,10 +40,10 @@ $ docker build -t alertlogic/erllambda:20.3 ./erllambda_docker/20
 #### Erlang shell
 
 ```console
-$ docker run -it --rm alertlogic/erllambda:20.3
-Erlang/OTP 20 [erts-9.3.3.5] [source] [64-bit] [smp:3:3] [ds:3:3:10] [async-threads:10] [hipe] [kernel-poll:false]
+$ docker run -it --rm sourcelevel/erllambda:24.2
+Erlang/OTP 24 [erts-12.2.1] [source] [64-bit] [smp:4:4] [ds:4:4:10] [async-threads:1]
 
-Eshell V9.3.3.5  (abort with ^G)
+Eshell V12.2.1  (abort with ^G)
 1>
 ```
 
