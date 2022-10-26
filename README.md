@@ -6,8 +6,8 @@ This is used as docker base image for developing [AWS Lambda](https://aws.amazon
 The goal is to provide images which can be used to build zip packages suitable
 for deployment as AWS Lambda functions with a provided BEAM runtime.
 
-Please see [erllambda](https://github.com/alertlogic/erllambda) for further details on how to
-run and deploy Erlang AWS Lambda functions.
+Please see [erllambda](https://github.com/alertlogic/erllambda) source repository
+for further details on how to run and deploy Erlang AWS Lambda functions.
 
 ## Usage example
 
@@ -18,7 +18,7 @@ run and deploy Erlang AWS Lambda functions.
 Simply pull image from docker hub with a required Erlang version:
 
 ``` console
-$ docker pull alertlogic/erllambda:20.3
+$ docker pull sourcelevel/erllambda:24.2
 ```
 
 #### Build image from sources
@@ -26,7 +26,7 @@ $ docker pull alertlogic/erllambda:20.3
 To build image locally clone repository:
 
 ```console
-$ git clone https://github.com/alertlogic/erllambda_docker.git
+$ git clone https://github.com/sourcelevel/erllambda_docker.git
 ```
 
 Specify path to a `Dockerfile` with a required version to build an image:
